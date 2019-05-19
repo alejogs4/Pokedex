@@ -1,5 +1,6 @@
 import React from 'react'
-import PokemonImage from './PokemonImage';
+import PokemonImage from './PokemonImage'
+import PropTypes from 'prop-types'
 
 const PokemonBasicInfo = ({ pokemon }) => (
   <div className='pokemon-data anton'>
@@ -16,5 +17,9 @@ const PokemonBasicInfo = ({ pokemon }) => (
     </ul>
   </div>
 )
+
+PokemonBasicInfo.propTypes = {
+  pokemon: PropTypes.object.isRequired
+}
 
 export default PokemonBasicInfo

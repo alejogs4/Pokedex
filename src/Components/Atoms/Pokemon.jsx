@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import PokemonImage from './PokemonImage';
+import PokemonImage from './PokemonImage'
+import PropTypes from 'prop-types'
 
 const Pokemon = ({ name, pokemonId })  => (
   <Link to={`/pokemon/${name}`} className='card'>
@@ -14,5 +15,10 @@ const Pokemon = ({ name, pokemonId })  => (
     </article>
   </Link>
 )
+
+Pokemon.propTypes = {
+  name: PropTypes.string.isRequired,
+  pokemonId: PropTypes.string.isRequired
+}
 
 export default Pokemon

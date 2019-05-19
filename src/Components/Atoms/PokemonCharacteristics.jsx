@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 const PokemonCharacteristics = ({ pokemon }) => (
   <div className='pokemon-characteristics'>
@@ -17,5 +18,9 @@ const PokemonCharacteristics = ({ pokemon }) => (
     </article>
   </div>
 )
+
+PokemonCharacteristics.propTypes = {
+  pokemon: PropTypes.object
+}
 
 export default PokemonCharacteristics
