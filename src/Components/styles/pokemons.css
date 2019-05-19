@@ -1,0 +1,153 @@
+.pokemons {
+  margin: 1em;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 1em;
+}
+
+.card {
+  text-align: center;
+  font-weight: bold;
+  border: 1px solid #ccc;
+  height: 200px;
+  font-size: 2em;
+  text-decoration: none;
+}
+
+.card p {
+  color: black;
+}
+
+.pokemon-container {
+  margin: 2em;
+}
+
+.pokemon-data-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-left: auto;
+  text-align: center;
+}
+
+.list {
+  list-style: none;
+}
+
+.pokemon-data-card {
+  color: black;
+  letter-spacing: 0.09em;
+  margin-bottom: 1em;
+  padding: 1em;
+  border: 1px solid var(--main-color);
+  border-radius: 0.25rem;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 1em;
+  justify-content: center;
+}
+
+@media screen and (min-width: 760px) {
+  .pokemon-data-container {
+    grid-template-columns: 1fr 3fr;
+    text-align: left;
+  }
+
+  .flex {
+    justify-content: flex-start;
+  }
+}
+
+[type="search"] {
+  display: block;
+  width: 80%;
+  height: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0.2em;
+}
+
+.type {
+  margin-right: 1em;
+  padding: 0.2em;
+  border-radius: 0.3rem;
+  color: #fff;
+  letter-spacing: 0.09em;
+  background-color: black;
+  text-transform: uppercase;
+}
+
+.dark {
+  background-color: black;
+}
+
+.flying,
+.steel {
+  background-color: steelblue; 
+}
+
+.fire {
+  background-color: orange;
+}
+
+.water,
+.ice {
+  background-color: blue;
+}
+
+.bug {
+  background-color: green;
+}
+
+.poison {
+  background-color: olive;
+}
+
+.normal {
+  background-color: chocolate;
+}
+
+.electric {
+  background-color: yellow;
+  color: black;
+}
+
+.ground,
+.rock {
+  background-color: brown;
+}
+
+.grass,
+.dragon {
+  background-color: red;
+}
+
+.fairy {
+  background-color: pink;
+}
+
+.fighting {
+  background-color: coral;
+}
+.pagination {
+  text-align: center;
+}
+
+.psychic,
+.ghost {
+  background-color: rebeccapurple;
+}
+
+
+.pagination span {
+  display: inline-block;
+  width: 30px;
+  padding: 0.2rem;
+  margin-bottom: 1em;
+  background: var(--main-color);
+  color: #fff;
+  margin-right: 0.5em;
+  border-radius: 0.2rem;
+}

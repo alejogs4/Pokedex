@@ -1,0 +1,42 @@
+.form {
+  width: 40%;
+  border: 1px solid #ccc;
+  min-width: 300px;
+  background-color: #fff;
+  padding: var(--default-margin);
+}
+
+.form-input,
+.button {
+  width: 100%;
+  padding: 0.5em;
+}
+
+.form-input {
+  display: block;
+  margin-bottom: var(--default-margin);
+}
+
+.button {
+  background-color: var(--main-color);
+  color: #fff;
+  border: none;
+  font-size: 1.2em;
+  transition: all 200ms ease-out;
+  margin-bottom: var(--default-margin);
+}
+
+.button:hover {
+  border: 1px solid var(--main-color);
+  background: transparent;
+  color: var(--main-color);
+}
+
+.weak-password {
+  border: 1px solid var(--main-color);
+}
+
+.bad-password {
+  color: var(--main-color);
+  text-align: center;
+}

@@ -1,0 +1,16 @@
+.form-container {
+  display: flex;
+  min-height: 80vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.signup-link {
+  margin-bottom: var(--default-margin);
+  color: var(--main-color);
+  text-decoration: underline;
+}
+
+.center {
+  text-align: center;
+}
